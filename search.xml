@@ -4,6 +4,38 @@
   
     
     <entry>
+      <title>post_name</title>
+      <link href="/2020/05/01/post-name/"/>
+      <url>/2020/05/01/post-name/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>基于hexo博客上的matery主题美化以及优化</title>
+      <link href="/2020/04/30/PS%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+      <url>/2020/04/30/PS%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title=" 前言"></a><center> 前言<center></h1><p>1.上一篇教你们搭建了一个属于自己的博客并且部署到了coding上，但是有个问题他那个博客不好看怎么办我们就可以去下载一个主题我推荐的就是这个matery主题，因为我用的就是这个总体感觉还不错。</p><h1 id="安装matery主题"><a href="#安装matery主题" class="headerlink" title="安装matery主题"></a>安装matery主题</h1><p>首先我们打开储存博客的文件夹里面会有个themes命名的文件夹打开右键运行Git Bash Here输入这一段代码  </p><pre><code>git clone https://github.com/blinkfox/hexo-theme-matery.git</code></pre><p>他就会自动生成一个hexo-theme-matery的文件夹然后我们先来到hexoblog（就是你博客的文件夹）打开之后打开命名为_config.yml的文件_config.yml是你hexo博客的配置文件有些地方是可以改的我们用 VScode打开然后到翻到底最后几行里有一段这个代码<br><img src="post-name/Snipaste_2020-05-01_10-25-46.png" alt=""><br>这个代码差不多在95行左右的样子然后我们吧那个theme：改成你在themes文件夹里生成的主题文件的名字我这个图片是改好之后的样子改好之后，我们保存然后到我们hexoblog再打开Git Bash Here然后运行<code>hexo clean</code>（说明一下运行这段代码之后他会删除你hexoblog文件夹下的public文件）然后我们再运行<code>hexo g</code>（运行这段代码就会把你这些改好了的文件和代码重新做一个public文件夹PS：我也不知道这样讲对不对）然后我们再运行<code>hexo d</code>（运行这段会把你本地的文件数据部署到coding）这时候打开你的博客大概的布局就是这样的<br><img src="post-name/Snipaste_2020-05-01_09-36-04.png" alt=""><br>当然你的肯定和我的不一样我的是改好了的接下来我们就来自定义你的主题。  </p><h1 id="自定义主题"><a href="#自定义主题" class="headerlink" title="自定义主题"></a><center>自定义主题<center></h1><p>我们打开hexoblog的_config.yml然后就是开始那一段就是我们需要改的<img src="post-name/Snipaste_2020-05-01_10-46-47.png" alt=""><br>第一段</p><pre><code># Sitetitle: 罗 # 这里可以改左上角的字subtitle: さあ # 这里是改中间的文字description: &#39;&#39;keywords:author: 剑仙 #这里是改你的昵称language: zh-CN # 这个你就照着我这个改这个是用来显示语言的timezone: &#39;&#39;</code></pre><p>我给大家搞个图吧<code>title: 罗 # 这里可以改左上角的字</code>这个对应的区域是logo 旁边的文字<br><img src="post-name/Snipas4.png" alt=""><br>这一段<code>subtitle: さあ # 这里是改中间的文字</code>是中间的文字<br><img src="post-name/Snipaste_20-04.png" alt=""><br>这一段<code>author: 剑仙 #这里是改你的昵称</code>是改你的昵称<br><img src="post-name/Snipaste_2020-05-01_11-03-51.png" alt="">  </p><h1 id="写累了过几天写"><a href="#写累了过几天写" class="headerlink" title="写累了过几天写"></a><center>写累了过几天写<center></h1>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> matery主题优化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>0基础教你用hexo+coding搭建博客及美化</title>
       <link href="/2020/04/29/hexo-coding%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%8F%8A%E7%BE%8E%E5%8C%96/"/>
       <url>/2020/04/29/hexo-coding%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%8F%8A%E7%BE%8E%E5%8C%96/</url>
