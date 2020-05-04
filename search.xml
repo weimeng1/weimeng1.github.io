@@ -8,9 +8,15 @@
       <link href="/2020/05/04/%E8%81%94%E6%83%B3z5%E8%A7%A3bl%E5%88%B7%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B/"/>
       <url>/2020/05/04/%E8%81%94%E6%83%B3z5%E8%A7%A3bl%E5%88%B7%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B/</url>
       
-        <content type="html"><![CDATA[<hr><p>title: “‘联想z5解bl刷系统教程<br>date: 2020-05-04 08:09:56<br>tags: 刷机</p><hr><h1 id="解除bl锁"><a href="#解除bl锁" class="headerlink" title="解除bl锁"></a>解除bl锁</h1>]]></content>
+        <content type="html"><![CDATA[<ul><li><h1 id="需要的工具"><a href="#需要的工具" class="headerlink" title="需要的工具"></a>需要的工具</h1><a href="https://pan.baidu.com/s/1JCIsVo2TYAYawos-vvkRnA" target="_blank" rel="noopener">工具</a><br>提取码：vcmo   <h1 id="解bl锁"><a href="#解bl锁" class="headerlink" title="解bl锁"></a>解bl锁</h1>ps：注意解锁bl会格式化请做好手机的备份<br>到上面链接下载里面的解锁bl锁工具，然后下载后解压到一个空的文件夹里，然后打开双击adb_cmd.exe<br><img src="post-name/Snipaste_2020-05-04_21-15-19.png" alt=""><br>然后输入<code>adb reboot bootloader</code>按下回车，手机就会进入bootloader<br><img src="post-name/Snipaste_2020-05-04_21-22-43.png" alt=""><br>确认链接正常然后输入<code>fasetboot device</code>按下回车，序列号与手机号显示一至<br><img src="https://www.netded.com/uploads/allimg/181205/1_181205175917_1.png" alt=""><br>最后输入<code>fastboot oem unlock-go</code>按下回车我们的手机就会格式化就然后就解锁完成了<br><img src="https://www.netded.com/uploads/allimg/181205/1_181205175944_1.png" alt=""><br>ps:解锁成功开机手机左上会有黄色感叹号，显示了就说明你刷好了。  <h1 id="刷入第三方rec"><a href="#刷入第三方rec" class="headerlink" title="刷入第三方rec"></a>刷入第三方rec</h1>待更新</li></ul>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 刷机 </tag>
+            
+        </tags>
       
     </entry>
     
