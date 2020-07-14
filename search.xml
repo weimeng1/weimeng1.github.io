@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>网易云音乐免费听付费音乐</title>
+      <link href="/2020/07/14/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E5%85%8D%E8%B4%B9%E5%90%AC%E4%BB%98%E8%B4%B9%E9%9F%B3%E4%B9%90/"/>
+      <url>/2020/07/14/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E5%85%8D%E8%B4%B9%E5%90%AC%E4%BB%98%E8%B4%B9%E9%9F%B3%E4%B9%90/</url>
+      
+        <content type="html"><![CDATA[<h1 id="准备的东西"><a href="#准备的东西" class="headerlink" title="准备的东西"></a>准备的东西</h1><ul><li>借一个一个有会员的账号</li><li><a href="https://github.com/NoColor2/ncmdump" target="_blank" rel="noopener">ncm转flac的程序</a>此程序不是我编写<h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1>原理很简单我们利用网易云可以存储音乐在云盘这个特点，我们先借一个有网易云会员的账号或者买几天的会员也许然后下载歌曲，接着到下载的目录找到歌曲你会发现这些音乐的格式是ncm的是网易云的一个加密的格式你如果这样去在云盘存储你刚刚下载的音乐是没有用的，我们需要一个工具就是那个放在上面链接的GitHub的程序这个程序可以将ncm转换成flac的格式。然后存储到云盘中。 <h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1>首先下载你想要存入云盘的歌曲这里以处处吻为例<img src="https://i.loli.net/2020/07/14/aiRrX1YfIhlSjMy.png" alt="Snipaste_2020-07-14_17-06-42.png"><br>然后下载那个程序，下载完后打开解压就是这个样子了<img src="https://i.loli.net/2020/07/14/bS8ODNpEmZ5uzBA.png" alt="Snipaste_2020-07-14_17-07-41.png"><br>接着我们把那个歌曲拖到那个exe文件上就会自动在存储歌曲的那个文件夹里转出来一个单独的flac格式（记住是拖过去不是打开exe文件再拖直接拖过去就行）<img src="https://i.loli.net/2020/07/14/xR5E3fJ8CDZKGbM.png" alt="Snipaste_2020-07-14_17-32-47.png"><br>最后打开网易云登录你自己的号在左边那一栏找到我的音乐云盘然后上传文件找到你转换的flac格式的音乐文件然后上传等文件上传完成之后你就可以听那些会员歌曲了<img src="https://i.loli.net/2020/07/14/TKlkp9eDx8zviGu.png" alt="Snipaste_2020-07-14_17-38-41.png"><br>存储成功VIP旁边会有个云的标志<img src="https://i.loli.net/2020/07/14/kWMPsGAKIJUfN9c.png" alt="Snipaste_2020-07-14_17-45-34.png"></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>PS的互补色原理</title>
       <link href="/2020/05/31/PS%E7%9A%84%E4%BA%92%E8%A1%A5%E8%89%B2%E5%8E%9F%E7%90%86/"/>
       <url>/2020/05/31/PS%E7%9A%84%E4%BA%92%E8%A1%A5%E8%89%B2%E5%8E%9F%E7%90%86/</url>
