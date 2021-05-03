@@ -10,8 +10,7 @@ jobs:
         uses: wearerequired/git-mirror-action@master
         env:
           # 注意在 Settings->Secrets 配置 GITEE_RSA_PRIVATE_KEY
-          SSH_PRIVATE_KEY: ${{ secrets.ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDmUmARBLO76SfqH9IfbQsO+IHhB47wFgE/pp+mABbgctpNIVgarqJ2Co0yPhktbTeo+X1C1be48+o3XQA6kbEqJkCCw0nSiHqaTR/rvzIl6tONHedeqA67sHXEXQ5fyF5uox4UapkTlDG9FoAbugn3xlNCzPnFmX6bSEF1VEB/DeMYpAawYLgE2ScCxfUn/dh05BwMpRfOSXVgIPfUhSMYz7/n6fA0SgT8jg8AStMuFc21WjV4tusUFUrSAjtQmu97JY41QMbzygJZDzB/zOwKhcV0uN/qHz4429G5e2qzVjvN5ONbAzUTv9Wr2yfn1cGLBfA3pzlGGctvPVtgA3pfj7k570Lmlr/8GyhtejFSS6nJlwJnwk1Ov/XkDHjRh0U7fm6IlRCtY8WI2SLxALt3VuUqOZEwbNzzVdgAGOgkQzMSr82xA13kFJhoL+greUEXu4g2NS82BQKp+6wKBZ3ablqrwtuxc7OUEduFVjwxTIffqWKD1Oo3yxA4jNvvHieuQLsaaONv2BXi0kjm8c/Lg6q6UnvAtoWE8DMJ5kAq1Mpvz142167pNijDVaZvvnAcb5g/rvgmpcAR/T8HXw/qB3z2rvPe3/hh/6dimNY2kQ2sph4xoBbYntVAdejxj1nBlONDvTXkP2pSBloBnYBvaImpsCoDH8NzcZHZK4jJbQ== 3238856289@qq.com
- }}
+          SSH_PRIVATE_KEY: ${{ secrets.ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDmUmARBLO76SfqH9IfbQsO+IHhB47wFgE/pp+mABbgctpNIVgarqJ2Co0yPhktbTeo+X1C1be48+o3XQA6kbEqJkCCw0nSiHqaTR/rvzIl6tONHedeqA67sHXEXQ5fyF5uox4UapkTlDG9FoAbugn3xlNCzPnFmX6bSEF1VEB/DeMYpAawYLgE2ScCxfUn/dh05BwMpRfOSXVgIPfUhSMYz7/n6fA0SgT8jg8AStMuFc21WjV4tusUFUrSAjtQmu97JY41QMbzygJZDzB/zOwKhcV0uN/qHz4429G5e2qzVjvN5ONbAzUTv9Wr2yfn1cGLBfA3pzlGGctvPVtgA3pfj7k570Lmlr/8GyhtejFSS6nJlwJnwk1Ov/XkDHjRh0U7fm6IlRCtY8WI2SLxALt3VuUqOZEwbNzzVdgAGOgkQzMSr82xA13kFJhoL+greUEXu4g2NS82BQKp+6wKBZ3ablqrwtuxc7OUEduFVjwxTIffqWKD1Oo3yxA4jNvvHieuQLsaaONv2BXi0kjm8c/Lg6q6UnvAtoWE8DMJ5kAq1Mpvz142167pNijDVaZvvnAcb5g/rvgmpcAR/T8HXw/qB3z2rvPe3/hh/6dimNY2kQ2sph4xoBbYntVAdejxj1nBlONDvTXkP2pSBloBnYBvaImpsCoDH8NzcZHZK4jJbQ== 3238856289@qq.com }}
         with:
           # 注意替换为你的 GitHub 源仓库地址
           source-repo: git@github.com:weimeng1/weimeng1.github.io.git
