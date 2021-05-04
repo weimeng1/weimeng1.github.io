@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="マイクロドリーム">
+    <meta name="keywords" content="hexo三平台（gitee、github、coding）自动一键部署, マイクロドリーム">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>マイクロドリーム</title>
+    <title>hexo三平台（gitee、github、coding）自动一键部署 | マイクロドリーム</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -309,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">hexo三平台（gitee、github、coding）自动一键部署</h1>
                 </div>
             </div>
         </div>
@@ -429,9 +429,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E8%84%9A%E6%9C%AC/">
+                                <span class="chip bg-color">脚本</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -443,7 +447,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-15
+                    2021-05-04
                 </div>
                 
 
@@ -454,7 +458,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    3 分
                 </div>
                 
 
@@ -464,276 +468,25 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>看板娘登陆平台</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-<script src="../live2d.min.js"></script>
-<style>
-html, body {
-	height: 100%;
-}
-body {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	background-color: #f5f5f5;
-}
-.form-signin {
-	width: 100%;
-	max-width: 330px;
-	padding: 15px;
-	margin: 0 auto;
-}
-.form-signin .checkbox {
-	font-weight: 400;
-}
-.form-signin .form-control {
-	position: relative;
-	box-sizing: border-box;
-	height: auto;
-	padding: 10px;
-	font-size: 16px;
-}
-.form-signin .form-control:focus {
-	z-index: 2;
-}
-.form-signin input[type=text] {
-	margin-bottom: -1px;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
-}
-.form-signin input[type=password] {
-	margin-bottom: 10px;
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-}
-#stage {
-	position: relative;
-}
-#stage img {
-	width: 100%;
-	margin-bottom: 20px;
-	border-radius: 20px;
-}
-#stage a {
-	position: absolute;
-	width: 2em;
-	height: 2em;
-	border-radius: 50%;
-}
-#inner {
-	position: relative;
-	background-color: #999;
-	clip-path: circle(120px at center);
-	-webkit-clip-path: circle(120px at center);
-}
-#cover {
-	position: absolute;
-	background-color: #CB3837;
-	width: 100%;
-	height: 100%;
-	bottom: 10%;
-	transition: all 1s;
-	box-shadow: 0 0 0 5px rgba(0, 0, 0, .1);
-}
-#text {
-	position: absolute;
-	bottom: 30%;
-	font-size: 2em;
-	left: 50%;
-	transform: translateX(-50%);
-	opacity: 0.4;
-	font-weight: bold;
-}
-#detail {
-	position: absolute;
-	background: rgba(255, 255, 255, .1);
-	width: 100%;
-	height: 10px;
-	bottom: 0;
-}
-#handle {
-	position: absolute;
-	background: #ccc;
-	bottom: -2px;
-	box-shadow: 0 1px 0 1px rgba(0, 0, 0, .1);
-	height: 8px;
-	left: 50%;
-	margin-left: -15px;
-	width: 30px;
-	cursor: pointer;
-}
-#info {
-	left: 40px;
-	bottom: 20px;
-}
-#refresh {
-	right: 40px;
-	bottom: 20px;
-}
-#live2d {
-	cursor: grab;
-	height: 300px;
-	width: 300px;
-}
-#live2d:active {
-	cursor: grabbing;
-}
-</style>
-<meta name="generator" content="Hexo 4.2.0"></head>
-<body class="text-center">
-<form class="form-signin" action="login.php" method="post">
-	<div id="stage">
-		<div id="inner">
-			<div id="cover">
-				<div id="text">
-					<span style="color: cyan;">MIMI</span><span style="color: white;">POWERED</span>
-				</div>
-				<div id="detail"></div>
-				<div id="handle"></div>
-			</div>
-			<canvas class="mb-4" id="live2d" width="800" height="800"></canvas>
-		</div>
-		<a id="info" href="javascript:info()"><i class="fa fa-lg fa-info"></i></a>
-		<a id="refresh" href="javascript:refresh()"><i class="fa fa-lg fa-refresh"></i></a>
-	</div>
-	<h1 class="h3 mb-3 font-weight-normal">看板娘登陆平台</h1>
-	<label for="room" class="sr-only">用户名</label>
-	<input type="text" name="room" class="form-control" placeholder="用户名" required autofocus>
-	<label for="pass" class="sr-only">密码</label>
-	<input type="password" name="pass" class="form-control" placeholder="密码" required>
-	<div class="checkbox mb-3">
-		<label>
-			<input type="checkbox" value="remember-me"> 记住我
-		</label>
-	</div>
-	<button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
-	<p class="mt-5 mb-3 text-muted">Copyleft &copy; Mimi 2019</p>
-</form>
-<script>
-/*
- * _(:з」∠)_
- * Created by Shuqiao Zhang in 2019.
- * https://zhangshuqiao.org
- */
-
-/*
- * This program is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- */
-window.addEventListener("load", () => {
-	"use strict";
-
-	if (!CSS.supports("clip-path", "circle(120px at center)") && !CSS.supports("-webkit-clip-path", "circle(120px at center)")) {
-		document.getElementById("stage").innerHTML = '<img src="../assets/screenshot-1.png">';
-		return;
-	}
-
-	var apiPath = "https://live2d.fghrsh.net/api", state = 0,
-		modelId = localStorage.getItem("modelId"),
-		modelTexturesId = localStorage.getItem("modelTexturesId");
-	if (modelId === null) {
-		modelId = 1;
-		modelTexturesId = 53;
-	}
-	loadModel(modelId, modelTexturesId);
-
-	function loadModel(modelId, modelTexturesId) {
-		localStorage.setItem("modelId", modelId);
-		if (modelTexturesId === undefined) modelTexturesId = 0;
-		localStorage.setItem("modelTexturesId", modelTexturesId);
-		loadlive2d("live2d", `${apiPath}/get/?id=${modelId}-${modelTexturesId}`, null);
-		console.log("live2d", `模型 ${modelId}-${modelTexturesId} 加载完成`);
-		setTimeout(() => {
-			coverPosition("80%");
-			state = 2;
-		}, 2000);
-	}
-
-	function loadRandModel() {
-		var modelId = localStorage.getItem("modelId"),
-			modelTexturesId = localStorage.getItem("modelTexturesId");
-		fetch(`${apiPath}/rand_textures/?id=${modelId}-${modelTexturesId}`)
-			.then(response => response.json())
-			.then(result => {
-				loadModel(modelId, result.textures.id);
-				setTimeout(() => {
-					state = 2;
-					coverPosition("80%");
-					document.getElementById("refresh").setAttribute("href", "javascript:refresh()");
-				}, 1000);
-			});
-	}
-
-	function loadOtherModel() {
-		var modelId = localStorage.getItem("modelId");
-		fetch(`${apiPath}/switch/?id=${modelId}`)
-			.then(response => response.json())
-			.then(result => {
-				loadModel(result.model.id);
-			});
-	}
-
-	function coverPosition(pos) {
-		document.getElementById("cover").style.bottom = pos;
-	}
-
-	window.info = function() {
-		fetch("https://v1.hitokoto.cn")
-			.then(response => response.json())
-			.then(result => {
-				alert("「" + result.hitokoto + "」——" + result.from);
-			});
-	}
-
-	window.refresh = function() {
-		state = 0;
-		coverPosition("10%");
-		document.getElementById("refresh").setAttribute("href", "javascript:void(0)");
-		setTimeout(loadRandModel, 1000);
-	}
-
-	document.getElementById("handle").addEventListener("click", () => {
-		if (state === 1) {
-			state = 2;
-			coverPosition("80%");
-		}
-		else if (state === 2) {
-			state = 1;
-			coverPosition("20%");
-		}
-	});
-
-	document.querySelector("input[type=password]").addEventListener("focus", () => {
-		if (state === 2) {
-			state = 1;
-			coverPosition("20%");
-		}
-	});
-	document.querySelector("input[type=password]").addEventListener("blur", () => {
-		if (state === 1) {
-			state = 2;
-			coverPosition("80%");
-		}
-	});
-});
-</script>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"right","width":220,"height":720},"mobile":{"show":false},"rect":"opacity:0.7","log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"right","width":220,"height":720},"mobile":{"show":false},"rect":"opacity:0.7","log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"right","width":220,"height":720},"mobile":{"show":false},"rect":"opacity:0.7","log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"right","width":220,"height":720},"mobile":{"show":false},"rect":"opacity:0.7","log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
-</html>
+                <h2 id="事情缘由"><a href="#事情缘由" class="headerlink" title="事情缘由"></a>事情缘由</h2><h4 id="最近放假没啥事就把博客微调了一下然后部署到了三个平台上分别是：gitee、github、coding就发现了一个事这个gitee他不能自动部署，只能将文件推送上去之后手动自己点击部署。没办法开头也就忍了，之后有一次在那改着改着特别烦，一直hexo-clean-、hexo-g-、hexo-d。"><a href="#最近放假没啥事就把博客微调了一下然后部署到了三个平台上分别是：gitee、github、coding就发现了一个事这个gitee他不能自动部署，只能将文件推送上去之后手动自己点击部署。没办法开头也就忍了，之后有一次在那改着改着特别烦，一直hexo-clean-、hexo-g-、hexo-d。" class="headerlink" title="最近放假没啥事就把博客微调了一下然后部署到了三个平台上分别是：gitee、github、coding就发现了一个事这个gitee他不能自动部署，只能将文件推送上去之后手动自己点击部署。没办法开头也就忍了，之后有一次在那改着改着特别烦，一直hexo clean 、hexo g 、hexo d。"></a>最近放假没啥事就把博客微调了一下然后部署到了三个平台上分别是：gitee、github、coding就发现了一个事这个gitee他不能自动部署，只能将文件推送上去之后手动自己点击部署。没办法开头也就忍了，之后有一次在那改着改着特别烦，一直hexo clean 、hexo g 、hexo d。</h4><h4 id="这样去部署我就下定决心一定要吧这个问题解决。话不多说上主菜。"><a href="#这样去部署我就下定决心一定要吧这个问题解决。话不多说上主菜。" class="headerlink" title="这样去部署我就下定决心一定要吧这个问题解决。话不多说上主菜。"></a>这样去部署我就下定决心一定要吧这个问题解决。话不多说上主菜。</h4><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><h3 id="1-首先开头是找了找有没有这种一键部署gitee的软件，果不其然居然在csdn里给我找到了。首先要先感谢一下这位作者峡州仙士-我的亲情链接里也挂了有兴趣的可以去膜拜一下-。因为他博客的程序链接挂了，特意加他Q问他要。程序链接密码-i393，程序配置方法作者博客里有自行查找修改。"><a href="#1-首先开头是找了找有没有这种一键部署gitee的软件，果不其然居然在csdn里给我找到了。首先要先感谢一下这位作者峡州仙士-我的亲情链接里也挂了有兴趣的可以去膜拜一下-。因为他博客的程序链接挂了，特意加他Q问他要。程序链接密码-i393，程序配置方法作者博客里有自行查找修改。" class="headerlink" title="1.首先开头是找了找有没有这种一键部署gitee的软件，果不其然居然在csdn里给我找到了。首先要先感谢一下这位作者峡州仙士(我的亲情链接里也挂了有兴趣的可以去膜拜一下)。因为他博客的程序链接挂了，特意加他Q问他要。程序链接密码:i393，程序配置方法作者博客里有自行查找修改。"></a>1.首先开头是找了找有没有这种一键部署gitee的软件，果不其然居然在csdn里给我找到了。首先要先感谢一下这位作者<a href="https://cjh0613.com/" target="_blank" rel="noopener">峡州仙士</a>(我的亲情链接里也挂了有兴趣的可以去膜拜一下)。因为他博客的程序链接挂了，特意加他Q问他要。<a href="https://wwa.lanzous.com/b08y7hjbc" target="_blank" rel="noopener">程序链接</a>密码:i393，程序配置方法作者博客里有自行查找修改。</h3><p>因为文件体积原因我把文件拆分了下载之后把exe文件添加至文件夹即可。<br></p>
+<h3 id="2-接着我又去找了找有没有一键部署hexo的办法不需要一直输入命令。结果还就真找到了（原文章）办法是在博客文件目录下新建一个bat文件代码如下"><a href="#2-接着我又去找了找有没有一键部署hexo的办法不需要一直输入命令。结果还就真找到了（原文章）办法是在博客文件目录下新建一个bat文件代码如下" class="headerlink" title="2.接着我又去找了找有没有一键部署hexo的办法不需要一直输入命令。结果还就真找到了（原文章）办法是在博客文件目录下新建一个bat文件代码如下:"></a>2.接着我又去找了找有没有一键部署hexo的办法不需要一直输入命令。结果还就真找到了（<a href="https://blog.csdn.net/qq_21808961/article/details/84868482?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162011992616780261962928%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=162011992616780261962928&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-1-84868482.first_rank_v2_pc_rank_v29&utm_term=hexo%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%E8%84%9A%E6%9C%AC" target="_blank" rel="noopener">原文章</a>）办法是在博客文件目录下新建一个bat文件代码如下:</h3><pre><code>@echo off
+E: # 修改为你博客所在的盘
+cd E:\Blog\blog5 # 修改为你博客所在的文件夹
+hexo clean&amp;&amp;hexo g&amp;&amp;hexo d</code></pre><p>这个代码要稍作修改别拿着就直接用了。</p>
+<h2 id="改进"><a href="#改进" class="headerlink" title="改进"></a>改进</h2><h3 id="有了以上两个程序我们就可以很轻松的部署了，这样一来话也就要两步第一步先执行bat命令让代码推送上去接着执行exe程序单独部署gitee。但是其实接触过bat命令的同学应该都知道，bat可以做很多事情例如打开一个程序。我的想法就是这样："><a href="#有了以上两个程序我们就可以很轻松的部署了，这样一来话也就要两步第一步先执行bat命令让代码推送上去接着执行exe程序单独部署gitee。但是其实接触过bat命令的同学应该都知道，bat可以做很多事情例如打开一个程序。我的想法就是这样：" class="headerlink" title="有了以上两个程序我们就可以很轻松的部署了，这样一来话也就要两步第一步先执行bat命令让代码推送上去接着执行exe程序单独部署gitee。但是其实接触过bat命令的同学应该都知道，bat可以做很多事情例如打开一个程序。我的想法就是这样："></a>有了以上两个程序我们就可以很轻松的部署了，这样一来话也就要两步第一步先执行bat命令让代码推送上去接着执行exe程序单独部署gitee。但是其实接触过bat命令的同学应该都知道，bat可以做很多事情例如打开一个程序。我的想法就是这样：</h3><pre><code>修改bat文件让他 —— 执行部署 —— 然后打开这个exe文件结果就是这样
+@echo off
+E:
+cd E:\Blog\blog5
+hexo clean&amp;&amp;hexo g&amp;&amp;hexo d&amp;&amp;start &quot;&quot;  D:\BOLG\hexoblog\&quot;gitee.exe&quot; # 指定你那个exe文件的位置</code></pre><p>这串代码看似没有问题但是我也不知道什么原因导致闪退<br><br>我想了半天最后采取了看似最蠢也最好用的一种方法那就是套娃，想法如下：<br><br>我新建了一个bat文件来打开exe文件然后整体运行起来就是这样<br><br>首先先打开第一个bat文件部署完之后第一个bat文件会自动打开第二个bat文件接着第二个bat文件会自动打开那个exe文件。这是最后成品代码记得自己修改路径。</p>
+<pre><code># 第一个bat文件
+@echo off
+D: #修改为你博客所在的磁盘
+cd D:\BOLG\hexoblog\ # 修改为你博客所在位置
+hexo clean&amp;&amp;hexo g&amp;&amp;hexo d&amp;&amp;D:&amp;&amp;start &quot;&quot;  D:\BOLG\hexoblog\&quot;gitee.bat&quot; # 修改为你第二个bat文件的位置
+# 第二个bat文件
+D: # 修改为你博客所在的磁盘
+cd D:\BOLG\gitee 你exe文件存放的文件架
+start D:\BOLG\gitee\gitee.exe 修改为你exe文件存放的位置。</code></pre><p>这条一来的话就大功告成了。</p>
 
             </div>
             <hr/>
@@ -759,7 +512,7 @@ window.addEventListener("load", () => {
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jxxg.gitee.io/live2d-widget/demo/login.html">https://jxxg.gitee.io/live2d-widget/demo/login.html</a>
+                    <a href="https://jxxg.gitee.io/2021/0504undefined.html">https://jxxg.gitee.io/2021/0504undefined.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -796,7 +549,11 @@ window.addEventListener("load", () => {
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E8%84%9A%E6%9C%AC/">
+                                    <span class="chip bg-color">脚本</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -967,41 +724,24 @@ window.addEventListener("load", () => {
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/live2d-widget/demo/login.html">
+                <a href="/2021/0504undefined.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="hexo三平台（gitee、github、coding）自动一键部署">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">hexo三平台（gitee、github、coding）自动一键部署</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-
-
-
-
-看板娘登陆平台
-
-
-
-
-html, body {
-	height: 100%;
-}
-body {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	p
+                            事情缘由最近放假没啥事就把博客微调了一下然后部署到了三个平台上分别是：gitee、github、coding就发现了一个事这个gitee他不能自动部署，只能将文件推送上去之后手动自己点击部署。没办法开头也就忍了，之后有一次在那改着改着特别烦
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-04
                             </span>
                         <span class="publish-author">
                             
@@ -1013,50 +753,43 @@ body {
                 </div>
 
                 
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%84%9A%E6%9C%AC/">
+                        <span class="chip bg-color">脚本</span>
+                    </a>
+                    
+                </div>
+                
             </div>
         </div>
         
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/live2d-widget/demo/login.html">
+                <a href="/2020/0714f65de4b3.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="网易云音乐免费听付费音乐">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">网易云音乐免费听付费音乐</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-
-
-
-
-看板娘登陆平台
-
-
-
-
-html, body {
-	height: 100%;
-}
-body {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	p
+                            准备的东西
+借一个一个有会员的账号
+ncm转flac的程序此程序不是我编写原理原理很简单我们利用网易云可以存储音乐在云盘这个特点，我们先借一个有网易云会员的账号或者买几天的会员也许然后下载歌曲，接着到下载的目录找到歌曲你会发现这些音乐的格式
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-14
                             </span>
                         <span class="publish-author">
                             
@@ -1066,7 +799,6 @@ body {
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>

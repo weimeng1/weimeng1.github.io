@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>hexo三平台（gitee、github、coding）自动一键部署</title>
+      <link href="/2021/0504undefined.html"/>
+      <url>/2021/0504undefined.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="事情缘由"><a href="#事情缘由" class="headerlink" title="事情缘由"></a>事情缘由</h2><h4 id="最近放假没啥事就把博客微调了一下然后部署到了三个平台上分别是：gitee、github、coding就发现了一个事这个gitee他不能自动部署，只能将文件推送上去之后手动自己点击部署。没办法开头也就忍了，之后有一次在那改着改着特别烦，一直hexo-clean-、hexo-g-、hexo-d。"><a href="#最近放假没啥事就把博客微调了一下然后部署到了三个平台上分别是：gitee、github、coding就发现了一个事这个gitee他不能自动部署，只能将文件推送上去之后手动自己点击部署。没办法开头也就忍了，之后有一次在那改着改着特别烦，一直hexo-clean-、hexo-g-、hexo-d。" class="headerlink" title="最近放假没啥事就把博客微调了一下然后部署到了三个平台上分别是：gitee、github、coding就发现了一个事这个gitee他不能自动部署，只能将文件推送上去之后手动自己点击部署。没办法开头也就忍了，之后有一次在那改着改着特别烦，一直hexo clean 、hexo g 、hexo d。"></a>最近放假没啥事就把博客微调了一下然后部署到了三个平台上分别是：gitee、github、coding就发现了一个事这个gitee他不能自动部署，只能将文件推送上去之后手动自己点击部署。没办法开头也就忍了，之后有一次在那改着改着特别烦，一直hexo clean 、hexo g 、hexo d。</h4><h4 id="这样去部署我就下定决心一定要吧这个问题解决。话不多说上主菜。"><a href="#这样去部署我就下定决心一定要吧这个问题解决。话不多说上主菜。" class="headerlink" title="这样去部署我就下定决心一定要吧这个问题解决。话不多说上主菜。"></a>这样去部署我就下定决心一定要吧这个问题解决。话不多说上主菜。</h4><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><h3 id="1-首先开头是找了找有没有这种一键部署gitee的软件，果不其然居然在csdn里给我找到了。首先要先感谢一下这位作者峡州仙士-我的亲情链接里也挂了有兴趣的可以去膜拜一下-。因为他博客的程序链接挂了，特意加他Q问他要。程序链接密码-i393，程序配置方法作者博客里有自行查找修改。"><a href="#1-首先开头是找了找有没有这种一键部署gitee的软件，果不其然居然在csdn里给我找到了。首先要先感谢一下这位作者峡州仙士-我的亲情链接里也挂了有兴趣的可以去膜拜一下-。因为他博客的程序链接挂了，特意加他Q问他要。程序链接密码-i393，程序配置方法作者博客里有自行查找修改。" class="headerlink" title="1.首先开头是找了找有没有这种一键部署gitee的软件，果不其然居然在csdn里给我找到了。首先要先感谢一下这位作者峡州仙士(我的亲情链接里也挂了有兴趣的可以去膜拜一下)。因为他博客的程序链接挂了，特意加他Q问他要。程序链接密码:i393，程序配置方法作者博客里有自行查找修改。"></a>1.首先开头是找了找有没有这种一键部署gitee的软件，果不其然居然在csdn里给我找到了。首先要先感谢一下这位作者<a href="https://cjh0613.com/" target="_blank" rel="noopener">峡州仙士</a>(我的亲情链接里也挂了有兴趣的可以去膜拜一下)。因为他博客的程序链接挂了，特意加他Q问他要。<a href="https://wwa.lanzous.com/b08y7hjbc" target="_blank" rel="noopener">程序链接</a>密码:i393，程序配置方法作者博客里有自行查找修改。</h3><p>因为文件体积原因我把文件拆分了下载之后把exe文件添加至文件夹即可。<br></p><h3 id="2-接着我又去找了找有没有一键部署hexo的办法不需要一直输入命令。结果还就真找到了（原文章）办法是在博客文件目录下新建一个bat文件代码如下"><a href="#2-接着我又去找了找有没有一键部署hexo的办法不需要一直输入命令。结果还就真找到了（原文章）办法是在博客文件目录下新建一个bat文件代码如下" class="headerlink" title="2.接着我又去找了找有没有一键部署hexo的办法不需要一直输入命令。结果还就真找到了（原文章）办法是在博客文件目录下新建一个bat文件代码如下:"></a>2.接着我又去找了找有没有一键部署hexo的办法不需要一直输入命令。结果还就真找到了（<a href="https://blog.csdn.net/qq_21808961/article/details/84868482?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522162011992616780261962928%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=162011992616780261962928&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-1-84868482.first_rank_v2_pc_rank_v29&utm_term=hexo%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%E8%84%9A%E6%9C%AC" target="_blank" rel="noopener">原文章</a>）办法是在博客文件目录下新建一个bat文件代码如下:</h3><pre><code>@echo offE: # 修改为你博客所在的盘cd E:\Blog\blog5 # 修改为你博客所在的文件夹hexo clean&amp;&amp;hexo g&amp;&amp;hexo d</code></pre><p>这个代码要稍作修改别拿着就直接用了。</p><h2 id="改进"><a href="#改进" class="headerlink" title="改进"></a>改进</h2><h3 id="有了以上两个程序我们就可以很轻松的部署了，这样一来话也就要两步第一步先执行bat命令让代码推送上去接着执行exe程序单独部署gitee。但是其实接触过bat命令的同学应该都知道，bat可以做很多事情例如打开一个程序。我的想法就是这样："><a href="#有了以上两个程序我们就可以很轻松的部署了，这样一来话也就要两步第一步先执行bat命令让代码推送上去接着执行exe程序单独部署gitee。但是其实接触过bat命令的同学应该都知道，bat可以做很多事情例如打开一个程序。我的想法就是这样：" class="headerlink" title="有了以上两个程序我们就可以很轻松的部署了，这样一来话也就要两步第一步先执行bat命令让代码推送上去接着执行exe程序单独部署gitee。但是其实接触过bat命令的同学应该都知道，bat可以做很多事情例如打开一个程序。我的想法就是这样："></a>有了以上两个程序我们就可以很轻松的部署了，这样一来话也就要两步第一步先执行bat命令让代码推送上去接着执行exe程序单独部署gitee。但是其实接触过bat命令的同学应该都知道，bat可以做很多事情例如打开一个程序。我的想法就是这样：</h3><pre><code>修改bat文件让他 —— 执行部署 —— 然后打开这个exe文件结果就是这样@echo offE:cd E:\Blog\blog5hexo clean&amp;&amp;hexo g&amp;&amp;hexo d&amp;&amp;start &quot;&quot;  D:\BOLG\hexoblog\&quot;gitee.exe&quot; # 指定你那个exe文件的位置</code></pre><p>这串代码看似没有问题但是我也不知道什么原因导致闪退<br><br>我想了半天最后采取了看似最蠢也最好用的一种方法那就是套娃，想法如下：<br><br>我新建了一个bat文件来打开exe文件然后整体运行起来就是这样<br><br>首先先打开第一个bat文件部署完之后第一个bat文件会自动打开第二个bat文件接着第二个bat文件会自动打开那个exe文件。这是最后成品代码记得自己修改路径。</p><pre><code># 第一个bat文件@echo offD: #修改为你博客所在的磁盘cd D:\BOLG\hexoblog\ # 修改为你博客所在位置hexo clean&amp;&amp;hexo g&amp;&amp;hexo d&amp;&amp;D:&amp;&amp;start &quot;&quot;  D:\BOLG\hexoblog\&quot;gitee.bat&quot; # 修改为你第二个bat文件的位置# 第二个bat文件D: # 修改为你博客所在的磁盘cd D:\BOLG\gitee 你exe文件存放的文件架start D:\BOLG\gitee\gitee.exe 修改为你exe文件存放的位置。</code></pre><p>这条一来的话就大功告成了。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 脚本 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>网易云音乐免费听付费音乐</title>
       <link href="/2020/0714f65de4b3.html"/>
       <url>/2020/0714f65de4b3.html</url>
